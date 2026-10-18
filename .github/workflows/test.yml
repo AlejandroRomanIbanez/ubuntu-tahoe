@@ -8,9 +8,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
-      - name: Syntax checks and tests
+      - name: Install ShellCheck
+        run: sudo apt-get update -q && sudo apt-get install -y -q shellcheck
+      - name: Offline tests and ShellCheck
         run: ./tests/run.sh
-      - name: ShellCheck
-        uses: ludeeus/action-shellcheck@master
-        with:
-          scandir: .

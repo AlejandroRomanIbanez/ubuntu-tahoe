@@ -2,7 +2,7 @@
 # Robustness suite for a real GNOME session. DISPOSABLE TEST HOST ONLY (the AWS host from
 # infra/aws): it uses sudo to simulate failures (no internet, root user) and changes settings freely.
 # Usage (from the repository root, inside the session env): tests/desktop/robustness.sh
-# shellcheck disable=SC2016,SC2317 # bash -c bodies get values as arguments; helpers run via check()
+# shellcheck disable=SC2016,SC2317,SC2329 # bash -c bodies get values as arguments; helpers run via check()
 set -Eeuo pipefail
 ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/../.." && pwd)"
 # shellcheck source=tests/desktop/session-env.sh
