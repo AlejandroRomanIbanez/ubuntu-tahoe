@@ -12,10 +12,11 @@ Give your **Ubuntu 24.04** desktop the look of **macOS Tahoe**, in light and dar
 **1. Download it.** Open a Terminal (`Ctrl`+`Alt`+`T`) and run:
 
 ```bash
-git clone <your-repository-url> ~/ubuntu-tahoe && cd ~/ubuntu-tahoe
+sudo apt install -y git
+git clone https://github.com/AlejandroRomanIbanez/ubuntu-tahoe.git ~/ubuntu-tahoe && cd ~/ubuntu-tahoe
 ```
 
-(No `git`? Run `sudo apt install git` first, or download the ZIP from the repository page and unzip it into your home folder.)
+(The repository is private: `git clone` asks for your GitHub username and a [personal access token](https://github.com/settings/tokens) as the password. Or, on the repository page, click **Code → Download ZIP** and unzip it into your home folder as `ubuntu-tahoe`.)
 
 **2. Install it.**
 
