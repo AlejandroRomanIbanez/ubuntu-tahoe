@@ -1,0 +1,41 @@
+PASS scripts are shell-syntax valid
+PASS ShellCheck
+PASS install --help exits successfully
+PASS uninstall --help exits successfully
+PASS module list contains every module
+PASS unknown module rejected
+PASS unknown profile rejected
+PASS profiles parse from config/profiles
+PASS full is an alias of tahoe
+PASS dry run changes no settings
+PASS dry run creates no state, cache or files
+PASS dry run reports missing prerequisites
+PASS dock install applies macOS-style dock
+PASS second install keeps the true originals in the ledger
+PASS second install adds no duplicate ledger rows
+PASS uninstall restores original dock values
+PASS uninstall keeps a value the user changed afterwards
+PASS keys that were at their default are reset, not rewritten
+PASS uninstall with nothing installed is a no-op
+PASS appearance refuses without prerequisites (no sudo)
+PASS failed install leaves settings untouched
+PASS --reset --dry-run changes nothing
+PASS --reset puts theme and icons back to Ubuntu defaults
+PASS --reset disables other extensions (Ubuntu defaults)
+PASS --reset moves custom GTK CSS into the backup
+PASS install continues after reset
+PASS reset refuses while Tahoe is installed
+PASS uninstall after --reset leaves Ubuntu defaults
+PASS --restore brings back the previous look exactly
+PASS --restore brings back custom GTK CSS
+PASS enable_extension appends once and keeps others
+PASS uninstall disables only our extension
+PASS existing user file is moved aside
+PASS uninstall puts the user's file back
+[ubuntu-tahoe] DOWNLOAD: p from file:///tmp/tmp.mdhGRkBL91/payload
+PASS verified download is accepted
+[ubuntu-tahoe] Cached p is corrupted; downloading it again
+[ubuntu-tahoe] DOWNLOAD: p from file:///tmp/tmp.mdhGRkBL91/payload
+PASS corrupted cache is re-downloaded
+PASS checksum mismatch is refused
+PASS theme-sync is a no-op without config

@@ -1,0 +1,7 @@
+SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+PASS GNOME Shell runs on Wayland
+PASS Tahoe shell theme loaded
+PASS user-theme@gnome-shell-extensions.gcampax.github.com active on Wayland
+PASS blur-my-shell@aunetx active on Wayland
+PASS ubuntu-dock@ubuntu.com active on Wayland
+PASS no GNOME Shell JS errors

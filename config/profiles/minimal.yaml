@@ -1,0 +1,4 @@
+name: minimal
+description: MacTahoe GTK and GNOME Shell theme only (light and dark), no icons, dock or extensions beyond User Themes.
+modules:
+  - appearance

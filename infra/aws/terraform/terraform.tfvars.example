@@ -1,0 +1,6 @@
+aws_region    = "eu-central-1"
+ami_id        = ""                # Empty = Canonical's current Ubuntu 24.04 image; or pin e.g. "ami-..."
+instance_type = "t3.xlarge"
+key_name      = ""                # Empty = generate a disposable key at ./ubuntu-tahoe-test.pem
+trusted_cidr  = "203.0.113.10/32" # Replace with your public IP (curl https://checkip.amazonaws.com)/32
+name_suffix   = "alpha"

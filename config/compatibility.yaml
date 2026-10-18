@@ -1,0 +1,10 @@
+platform:
+  distribution: Ubuntu
+  release: "24.04 LTS (tested on 24.04.5 and later point releases)"
+  desktop: GNOME
+  target_gnome_major: 46
+policy:
+  force_extension_compatibility: false
+  competing_dock_managers: false
+  automatic_third_party_downloads: pinned-and-checksummed-only
+  privilege_escalation: apt-install-of-missing-packages-only-with-user-consent

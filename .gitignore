@@ -1,0 +1,12 @@
+# Local test artifacts
+*.log
+*.tmp
+.coverage/
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+crash.log
+*.pem
+.terraform.lock.hcl
+!docs/test-results/**/*.log

@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Stand-in for dconf used by tests/run.sh, backed by fake-gsettings' files ($FAKE_GSETTINGS_DIR).
+# A key whose file holds DEFAULT, or which is listed in .defaults, counts as unset.
+set -u
+db="${FAKE_GSETTINGS_DIR:?}"
+split(){ local p="${1#/}"; key="${p##*/}"; schema="${p%/*}"; schema="${schema//\//.}"; }
+unset_key(){ [[ "$(cat "$db/$1/$2" 2>/dev/null)" == DEFAULT ]] || grep -Fxq "$1 $2" "$db/.defaults" 2>/dev/null; }
+case "${1:-}" in
+  read) split "$2"; unset_key "$schema" "$key" || cat "$db/$schema/$key" 2>/dev/null || true ;;
+  write) split "$2"; if [[ -f "$db/$schema/$key" ]]; then printf '%s\n' "$3" > "$db/$schema/$key"; fi ;;
+  reset)
+    if [[ "$2" == -f ]]; then d="${3#/}"; d="${d%/}"; for f in "$db/${d//\//.}"/*; do if [[ -f "$f" ]]; then echo DEFAULT > "$f"; fi; done
+    else split "$2"; if [[ -f "$db/$schema/$key" ]]; then echo DEFAULT > "$db/$schema/$key"; fi; fi ;;
+  dump) d="${2#/}"; d="${d%/}"; s="${d//\//.}"; [[ -d "$db/$s" ]] || exit 0
+    out="$(for f in "$db/$s"/*; do k="${f##*/}"; unset_key "$s" "$k" || printf '%s=%s\n' "$k" "$(cat "$f")"; done)"
+    [[ -z "$out" ]] || printf '[/]\n%s\n' "$out" ;;
+  load) d="${2#/}"; d="${d%/}"; s="${d//\//.}"; while IFS='=' read -r k v; do if [[ -n "$v" && -f "$db/$s/$k" ]]; then printf '%s\n' "$v" > "$db/$s/$k"; fi; done ;;
+  *) exit 0 ;;
+esac

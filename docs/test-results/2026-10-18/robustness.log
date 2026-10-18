@@ -1,0 +1,60 @@
+== Setup: start from a clean desktop
+== Dry run
+PASS dry run changes no settings
+PASS dry run creates no files
+== Safety guards
+PASS installer refuses to run as root
+PASS unknown module is rejected
+PASS uninstall with nothing installed is harmless
+== No internet, empty cache
+PASS install fails cleanly without internet
+PASS failed install rolled back every setting
+PASS failed install left no files behind
+PASS user's own gtk.css untouched after failure
+== Interrupted install (killed mid-build), then recovery
+tests/desktop/robustness.sh: line 66: 140594 Killed                  timeout -s KILL 6 ./install.sh > /dev/null 2>&1
+PASS re-running after an interrupted install succeeds
+PASS uninstall after an interrupted install restores everything
+PASS settings identical to before
+PASS user's gtk.css restored
+== Corrupted download cache
+PASS install recovers from a corrupted cache
+PASS corrupted file was replaced
+== Installed state
+PASS all theme files present
+PASS user's gtk.css was set aside, not deleted
+PASS theme-sync service running
+PASS light mode fully applied
+PASS dock moved to the bottom
+PASS window buttons on the left
+PASS nothing outside HOME was modified
+== Second install is a no-op
+PASS second install changes no settings
+PASS second install leaves theme settings identical
+== Light/dark switching
+PASS 10 rapid toggles end consistent (light)
+PASS dark mode applies theme, shell, icons and libadwaita
+PASS dark wallpaper set
+PASS light mode applies theme, shell, icons and libadwaita
+== Ubuntu Appearance accent click (rewrites gtk-theme to Yaru)
+PASS theme is restored to MacTahoe automatically
+== Theme-sync crash recovery
+PASS service restarts after a crash
+PASS switching still works after the crash
+== Removing one module leaves the others working
+PASS icons back to their original theme
+PASS theme still MacTahoe
+PASS sync no longer touches icons after icons removed
+PASS icons module reinstalls
+== The user's own changes are respected
+PASS dock kept on the left (user's choice) after uninstall
+PASS other dock settings restored to Ubuntu defaults
+== GNOME Shell health
+PASS no GNOME Shell errors from our extensions
+== Full uninstall
+PASS settings identical to the clean baseline
+PASS no theme files left
+PASS user's own gtk.css is back
+PASS theme-sync service gone
+
+Robustness: 42 passed, 0 failed

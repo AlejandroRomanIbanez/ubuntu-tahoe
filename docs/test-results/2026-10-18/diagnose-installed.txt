@@ -1,0 +1,18 @@
+=== Ubuntu Tahoe diagnostics ===
+Date: 2026-10-18T11:14:03+00:00
+OS: Ubuntu 24.04.5 LTS 24.04
+Desktop: ubuntu:GNOME
+Session: tty
+GNOME Shell 46.0
+gtk-theme: 'MacTahoe-Light'
+icon-theme: 'MacTahoe-light'
+cursor-theme: 'MacTahoe-cursors'
+color-scheme: 'default'
+Enabled extensions: ['user-theme@gnome-shell-extensions.gcampax.github.com', 'blur-my-shell@aunetx']
+blur-my-shell@aunetx
+ubuntu-appindicators@ubuntu.com
+ding@rastersoft.com
+ubuntu-dock@ubuntu.com
+tiling-assistant@ubuntu.com
+user-theme@gnome-shell-extensions.gcampax.github.com
+State directory: /home/ubuntu/.local/state/ubuntu-tahoe

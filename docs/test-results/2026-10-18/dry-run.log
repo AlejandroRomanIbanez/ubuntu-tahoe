@@ -1,0 +1,9 @@
+[ubuntu-tahoe] DRY RUN: no changes will be made. Profile=tahoe Modules=appearance icons cursor wallpaper dock blur
+[ubuntu-tahoe] appearance: would build MacTahoe GTK theme 2026-09-10 (sha256 ee7078b79821…) into ~/.themes/{MacTahoe-Light MacTahoe-Dark}
+[ubuntu-tahoe] appearance: would enable the User Themes extension, link ~/.config/gtk-4.0 for libadwaita apps, set macOS-style window buttons, and start ubuntu-tahoe-theme-sync
+[ubuntu-tahoe] appearance: prerequisites present
+[ubuntu-tahoe] icons: would install MacTahoe icon theme 2026-09-10 (sha256 6330369e9e10…) into /home/ubuntu/.local/share/icons/{MacTahoe MacTahoe-light MacTahoe-dark}
+[ubuntu-tahoe] cursor: would install MacTahoe-cursors from MacTahoe icon theme 2026-09-10 into /home/ubuntu/.local/share/icons/MacTahoe-cursors and select it (24 px)
+[ubuntu-tahoe] wallpaper: would copy MacTahoe-day/night.jpeg from MacTahoe GTK theme 2026-09-10 into /home/ubuntu/.local/share/backgrounds/ubuntu-tahoe and set light/dark wallpapers
+[ubuntu-tahoe] dock: Ubuntu Dock schema detected; would set a bottom, centred, non-extended dock with 48 px icons, dots and trash
+[ubuntu-tahoe] blur: would install Blur My Shell v75 (sha256 0f5703786942…) into /home/ubuntu/.local/share/gnome-shell/extensions/blur-my-shell@aunetx and enable it (takes effect after next login)

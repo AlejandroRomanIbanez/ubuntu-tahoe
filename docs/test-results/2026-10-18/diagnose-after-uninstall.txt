@@ -1,0 +1,16 @@
+=== Ubuntu Tahoe diagnostics ===
+Date: 2026-10-18T11:14:06+00:00
+OS: Ubuntu 24.04.5 LTS 24.04
+Desktop: ubuntu:GNOME
+Session: tty
+GNOME Shell 46.0
+gtk-theme: 'Yaru'
+icon-theme: 'Yaru'
+cursor-theme: 'Yaru'
+color-scheme: 'default'
+Enabled extensions: @as []
+ubuntu-appindicators@ubuntu.com
+ding@rastersoft.com
+ubuntu-dock@ubuntu.com
+tiling-assistant@ubuntu.com
+State directory: /home/ubuntu/.local/state/ubuntu-tahoe

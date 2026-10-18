@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Minimal file-backed stand-in for gsettings used by tests/run.sh (no dconf or GNOME needed).
+# Schemas/keys live in $FAKE_GSETTINGS_DIR/<schema>/<key>, one file per key holding the GVariant text.
+set -u
+db="${FAKE_GSETTINGS_DIR:?}"
+case "${1:-}" in
+  list-schemas) find "$db" -mindepth 1 -maxdepth 1 -type d -printf '%f\n' ;;
+  list-keys) [[ -d "$db/$2" ]] || exit 1; find "$db/$2" -mindepth 1 -maxdepth 1 -type f -printf '%f\n' ;;
+  list-recursively) [[ -d "$db/$2" ]] || exit 1; for f in "$db/$2"/*; do printf '%s %s %s\n' "$2" "${f##*/}" "$(cat "$f")"; done ;;
+  get) [[ -f "$db/$2/$3" ]] || { echo "No such key '$3'" >&2; exit 1; }; cat "$db/$2/$3" ;;
+  set) [[ -f "$db/$2/$3" ]] || { echo "No such key '$3'" >&2; exit 1; }; printf '%s\n' "$4" > "$db/$2/$3" ;;
+  reset) [[ -f "$db/$2/$3" ]] || exit 1; printf 'DEFAULT\n' > "$db/$2/$3" ;;
+  monitor) exit 0 ;;
+  *) echo "fake-gsettings: unsupported: $*" >&2; exit 2 ;;
+esac

@@ -1,0 +1,109 @@
+[ubuntu-tahoe] These Ubuntu packages are needed first: sassc libglib2.0-dev-bin curl gnome-shell-extensions
+Hit:1 http://eu-central-1.ec2.archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://eu-central-1.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:3 http://eu-central-1.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following package was automatically installed and is no longer required:
+  libtext-engine-0.1-0
+Use 'sudo apt autoremove' to remove it.
+Suggested packages:
+  libgdk-pixbuf2.0-bin
+The following NEW packages will be installed:
+  curl gnome-shell-extensions libglib2.0-dev-bin sassc
+0 upgraded, 4 newly installed, 0 to remove and 0 not upgraded.
+Need to get 226 kB/540 kB of archives.
+After this operation, 2336 kB of additional disk space will be used.
+Get:1 http://security.ubuntu.com/ubuntu noble-security/main amd64 curl amd64 8.5.0-2ubuntu10.16 [226 kB]
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Fetched 226 kB in 0s (1193 kB/s)
+Selecting previously unselected package curl.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 107762 files and directories currently installed.)
+Preparing to unpack .../curl_8.5.0-2ubuntu10.16_amd64.deb ...
+Unpacking curl (8.5.0-2ubuntu10.16) ...
+Selecting previously unselected package gnome-shell-extensions.
+Preparing to unpack .../gnome-shell-extensions_46.1-2_all.deb ...
+Unpacking gnome-shell-extensions (46.1-2) ...
+Selecting previously unselected package libglib2.0-dev-bin.
+Preparing to unpack .../libglib2.0-dev-bin_2.80.0-6ubuntu3.9_amd64.deb ...
+Unpacking libglib2.0-dev-bin (2.80.0-6ubuntu3.9) ...
+Selecting previously unselected package sassc.
+Preparing to unpack .../sassc_3.6.1+20201027-2_amd64.deb ...
+Unpacking sassc (3.6.1+20201027-2) ...
+Setting up libglib2.0-dev-bin (2.80.0-6ubuntu3.9) ...
+Setting up gnome-shell-extensions (46.1-2) ...
+Setting up sassc (3.6.1+20201027-2) ...
+Setting up curl (8.5.0-2ubuntu10.16) ...
+Processing triggers for libglib2.0-0t64:amd64 (2.80.0-6ubuntu3.9) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+[ubuntu-tahoe] MOVED aside: /home/ubuntu/.config/gtk-3.0/gtk.css
+[ubuntu-tahoe] Backup saved: /home/ubuntu/.local/state/ubuntu-tahoe/reset-backup
+[ubuntu-tahoe] Appearance reset to Ubuntu defaults (theme 'Yaru', extensions: Ubuntu's defaults).
+[ubuntu-tahoe] Restore your previous look any time with: ./scripts/reset-appearance.sh --restore
+[ubuntu-tahoe] Settings snapshot saved: /home/ubuntu/.local/state/ubuntu-tahoe/backups/20261018-122135
+[ubuntu-tahoe] DOWNLOAD: MacTahoe-gtk-theme-2026-09-10.tar.gz from https://github.com/vinceliuice/MacTahoe-gtk-theme/archive/refs/tags/2026-09-10.tar.gz
+[ubuntu-tahoe] appearance: building MacTahoe for GNOME Shell 46.0 (takes ~1 min)
+[ubuntu-tahoe] INSTALLED: ~/.themes/MacTahoe-Light
+[ubuntu-tahoe] INSTALLED: ~/.themes/MacTahoe-Dark
+[ubuntu-tahoe] ENABLED extension: user-theme@gnome-shell-extensions.gcampax.github.com
+[ubuntu-tahoe] SET: org.gnome.desktop.interface gtk-theme: 'Yaru' -> 'MacTahoe-Light'
+[ubuntu-tahoe] SET: org.gnome.shell.extensions.user-theme name: '' -> 'MacTahoe-Light'
+[ubuntu-tahoe] SET: org.gnome.desktop.wm.preferences button-layout: ':minimize,maximize,close' -> 'close,minimize,maximize:appmenu'
+[ubuntu-tahoe] appearance: light style active -> MacTahoe-Light
+[ubuntu-tahoe] DOWNLOAD: MacTahoe-icon-theme-2026-09-10.tar.gz from https://github.com/vinceliuice/MacTahoe-icon-theme/archive/refs/tags/2026-09-10.tar.gz
+[ubuntu-tahoe] INSTALLED: /home/ubuntu/.local/share/icons/MacTahoe
+[ubuntu-tahoe] INSTALLED: /home/ubuntu/.local/share/icons/MacTahoe-light
+[ubuntu-tahoe] INSTALLED: /home/ubuntu/.local/share/icons/MacTahoe-dark
+[ubuntu-tahoe] SET: org.gnome.desktop.interface icon-theme: 'Yaru' -> 'MacTahoe-light'
+[ubuntu-tahoe] INSTALLED: /home/ubuntu/.local/share/icons/MacTahoe-cursors
+[ubuntu-tahoe] SET: org.gnome.desktop.interface cursor-theme: 'Yaru' -> 'MacTahoe-cursors'
+[ubuntu-tahoe] UNCHANGED: org.gnome.desktop.interface cursor-size=24
+[ubuntu-tahoe] SET: org.gnome.desktop.background picture-uri: 'file:///usr/share/backgrounds/warty-final-ubuntu.png' -> 'file:///home/ubuntu/.local/share/backgrounds/ubuntu-tahoe/MacTahoe-day.jpeg'
+[ubuntu-tahoe] SET: org.gnome.desktop.background picture-uri-dark: 'file:///usr/share/backgrounds/ubuntu-wallpaper-d.png' -> 'file:///home/ubuntu/.local/share/backgrounds/ubuntu-tahoe/MacTahoe-night.jpeg'
+[ubuntu-tahoe] UNCHANGED: org.gnome.desktop.background picture-options='zoom'
+[ubuntu-tahoe] SET: org.gnome.shell.extensions.dash-to-dock dock-position: 'LEFT' -> 'BOTTOM'
+[ubuntu-tahoe] SET: org.gnome.shell.extensions.dash-to-dock extend-height: true -> false
+[ubuntu-tahoe] UNCHANGED: org.gnome.shell.extensions.dash-to-dock dock-fixed=true
+[ubuntu-tahoe] SET: org.gnome.shell.extensions.dash-to-dock autohide: true -> false
+[ubuntu-tahoe] SET: org.gnome.shell.extensions.dash-to-dock intellihide: true -> false
+[ubuntu-tahoe] UNCHANGED: org.gnome.shell.extensions.dash-to-dock dash-max-icon-size=48
+[ubuntu-tahoe] UNCHANGED: org.gnome.shell.extensions.dash-to-dock show-apps-at-top=false
+[ubuntu-tahoe] UNCHANGED: org.gnome.shell.extensions.dash-to-dock show-trash=true
+[ubuntu-tahoe] SET: org.gnome.shell.extensions.dash-to-dock show-mounts: true -> false
+[ubuntu-tahoe] UNCHANGED: org.gnome.shell.extensions.dash-to-dock running-indicator-style='DOTS'
+[ubuntu-tahoe] UNCHANGED: org.gnome.shell.extensions.dash-to-dock custom-theme-shrink=true
+[ubuntu-tahoe] DOWNLOAD: blur-my-shell-v75.zip from https://extensions.gnome.org/download-extension/blur-my-shell@aunetx.shell-extension.zip?version_tag=76297
+[ubuntu-tahoe] INSTALLED: /home/ubuntu/.local/share/gnome-shell/extensions/blur-my-shell@aunetx
+[ubuntu-tahoe] SET: org.gnome.shell.extensions.blur-my-shell.panel blur: true -> false
+[ubuntu-tahoe] SET: org.gnome.shell.extensions.blur-my-shell.popup blur: true -> false
+[ubuntu-tahoe] SET: org.gnome.shell.extensions.blur-my-shell.overview style-components: 1 -> 0
+[ubuntu-tahoe] SET: org.gnome.shell.extensions.blur-my-shell pipelines: {'pipeline_default': {'name': <'Default'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000000'>, 'params': <{'radius': <30>, 'brightness': <0.59999999999999998>}>}>]>}, 'pipeline_default_rounded': {'name': <'Default rounded'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000001'>, 'params': <{'radius': <30>, 'brightness': <0.59999999999999998>}>}>, <{'type': <'corner'>, 'id': <'effect_000000000002'>, 'params': <{'radius': <24>}>}>]>}} -> {'pipeline_default': {'name': <'Default'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000000'>, 'params': <{'radius': <30>, 'brightness': <1.0>}>}>]>}, 'pipeline_default_rounded': {'name': <'Default rounded'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000001'>, 'params': <{'radius': <30>, 'brightness': <1.0>}>}>, <{'type': <'corner'>, 'id': <'effect_000000000002'>, 'params': <{'radius': <24>}>}>]>}}
+[ubuntu-tahoe] ENABLED extension: blur-my-shell@aunetx
+[ubuntu-tahoe] blur: log out and back in to load Blur My Shell (GNOME Shell cannot load new extensions live).
+[ubuntu-tahoe] Installed: appearance icons cursor wallpaper dock blur. Undo with ./uninstall.sh --all (or --module NAME).
+[ubuntu-tahoe] Log out and back in once so GNOME Shell loads Blur My Shell.

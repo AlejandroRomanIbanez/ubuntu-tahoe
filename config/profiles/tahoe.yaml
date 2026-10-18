@@ -1,0 +1,9 @@
+name: tahoe
+description: Full macOS Tahoe-inspired look - theme, icons, cursor, wallpapers, floating dock and blur.
+modules:
+  - appearance
+  - icons
+  - cursor
+  - wallpaper
+  - dock
+  - blur

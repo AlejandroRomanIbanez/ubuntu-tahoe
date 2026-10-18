@@ -1,0 +1,39 @@
+[ubuntu-tahoe] Settings snapshot saved: /home/ubuntu/.local/state/ubuntu-tahoe/backups/20261018-111339
+[ubuntu-tahoe] appearance: building MacTahoe for GNOME Shell 46.0 (takes ~1 min)
+[ubuntu-tahoe] INSTALLED: ~/.themes/MacTahoe-Light
+[ubuntu-tahoe] INSTALLED: ~/.themes/MacTahoe-Dark
+[ubuntu-tahoe] UNCHANGED: extension already enabled: user-theme@gnome-shell-extensions.gcampax.github.com
+[ubuntu-tahoe] UNCHANGED: org.gnome.desktop.interface gtk-theme='MacTahoe-Light'
+[ubuntu-tahoe] UNCHANGED: org.gnome.shell.extensions.user-theme name='MacTahoe-Light'
+[ubuntu-tahoe] UNCHANGED: org.gnome.desktop.wm.preferences button-layout='close,minimize,maximize:appmenu'
+[ubuntu-tahoe] appearance: light style active -> MacTahoe-Light
+[ubuntu-tahoe] INSTALLED: /home/ubuntu/.local/share/icons/MacTahoe
+[ubuntu-tahoe] INSTALLED: /home/ubuntu/.local/share/icons/MacTahoe-light
+[ubuntu-tahoe] INSTALLED: /home/ubuntu/.local/share/icons/MacTahoe-dark
+[ubuntu-tahoe] UNCHANGED: org.gnome.desktop.interface icon-theme='MacTahoe-light'
+[ubuntu-tahoe] INSTALLED: /home/ubuntu/.local/share/icons/MacTahoe-cursors
+[ubuntu-tahoe] UNCHANGED: org.gnome.desktop.interface cursor-theme='MacTahoe-cursors'
+[ubuntu-tahoe] UNCHANGED: org.gnome.desktop.interface cursor-size=24
+[ubuntu-tahoe] UNCHANGED: org.gnome.desktop.background picture-uri='file:///home/ubuntu/.local/share/backgrounds/ubuntu-tahoe/MacTahoe-day.jpeg'
+[ubuntu-tahoe] UNCHANGED: org.gnome.desktop.background picture-uri-dark='file:///home/ubuntu/.local/share/backgrounds/ubuntu-tahoe/MacTahoe-night.jpeg'
+[ubuntu-tahoe] UNCHANGED: org.gnome.desktop.background picture-options='zoom'
+[ubuntu-tahoe] UNCHANGED: org.gnome.shell.extensions.dash-to-dock dock-position='BOTTOM'
+[ubuntu-tahoe] UNCHANGED: org.gnome.shell.extensions.dash-to-dock extend-height=false
+[ubuntu-tahoe] UNCHANGED: org.gnome.shell.extensions.dash-to-dock dock-fixed=true
+[ubuntu-tahoe] UNCHANGED: org.gnome.shell.extensions.dash-to-dock autohide=false
+[ubuntu-tahoe] UNCHANGED: org.gnome.shell.extensions.dash-to-dock intellihide=false
+[ubuntu-tahoe] UNCHANGED: org.gnome.shell.extensions.dash-to-dock dash-max-icon-size=48
+[ubuntu-tahoe] UNCHANGED: org.gnome.shell.extensions.dash-to-dock show-apps-at-top=false
+[ubuntu-tahoe] UNCHANGED: org.gnome.shell.extensions.dash-to-dock show-trash=true
+[ubuntu-tahoe] UNCHANGED: org.gnome.shell.extensions.dash-to-dock show-mounts=false
+[ubuntu-tahoe] UNCHANGED: org.gnome.shell.extensions.dash-to-dock running-indicator-style='DOTS'
+[ubuntu-tahoe] UNCHANGED: org.gnome.shell.extensions.dash-to-dock custom-theme-shrink=true
+[ubuntu-tahoe] INSTALLED: /home/ubuntu/.local/share/gnome-shell/extensions/blur-my-shell@aunetx
+[ubuntu-tahoe] UNCHANGED: org.gnome.shell.extensions.blur-my-shell.panel blur=false
+[ubuntu-tahoe] UNCHANGED: org.gnome.shell.extensions.blur-my-shell.popup blur=false
+[ubuntu-tahoe] UNCHANGED: org.gnome.shell.extensions.blur-my-shell.overview style-components=0
+[ubuntu-tahoe] UNCHANGED: org.gnome.shell.extensions.blur-my-shell pipelines={'pipeline_default': {'name': <'Default'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000000'>, 'params': <{'radius': <30>, 'brightness': <1.0>}>}>]>}, 'pipeline_default_rounded': {'name': <'Default rounded'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000001'>, 'params': <{'radius': <30>, 'brightness': <1.0>}>}>, <{'type': <'corner'>, 'id': <'effect_000000000002'>, 'params': <{'radius': <24>}>}>]>}}
+[ubuntu-tahoe] UNCHANGED: extension already enabled: blur-my-shell@aunetx
+[ubuntu-tahoe] blur: log out and back in to load Blur My Shell (GNOME Shell cannot load new extensions live).
+[ubuntu-tahoe] Installed: appearance icons cursor wallpaper dock blur. Undo with ./uninstall.sh --all (or --module NAME).
+[ubuntu-tahoe] Log out and back in once so GNOME Shell loads Blur My Shell.

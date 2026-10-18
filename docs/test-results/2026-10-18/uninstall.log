@@ -1,0 +1,47 @@
+[ubuntu-tahoe] Removing module: blur
+[ubuntu-tahoe] RESET: org.gnome.shell.extensions.blur-my-shell.panel blur (back to the system default)
+[ubuntu-tahoe] RESET: org.gnome.shell.extensions.blur-my-shell.popup blur (back to the system default)
+[ubuntu-tahoe] RESET: org.gnome.shell.extensions.blur-my-shell.overview style-components (back to the system default)
+[ubuntu-tahoe] RESET: org.gnome.shell.extensions.blur-my-shell pipelines (back to the system default)
+[ubuntu-tahoe] DISABLED extension: blur-my-shell@aunetx
+[ubuntu-tahoe] REMOVED: /home/ubuntu/.local/share/gnome-shell/extensions/blur-my-shell@aunetx
+[ubuntu-tahoe] Removing module: dock
+[ubuntu-tahoe] RESET: org.gnome.shell.extensions.dash-to-dock dock-position (back to the system default)
+[ubuntu-tahoe] RESET: org.gnome.shell.extensions.dash-to-dock extend-height (back to the system default)
+[ubuntu-tahoe] RESET: org.gnome.shell.extensions.dash-to-dock dock-fixed (back to the system default)
+[ubuntu-tahoe] RESET: org.gnome.shell.extensions.dash-to-dock autohide (back to the system default)
+[ubuntu-tahoe] RESET: org.gnome.shell.extensions.dash-to-dock intellihide (back to the system default)
+[ubuntu-tahoe] RESET: org.gnome.shell.extensions.dash-to-dock dash-max-icon-size (back to the system default)
+[ubuntu-tahoe] RESET: org.gnome.shell.extensions.dash-to-dock show-apps-at-top (back to the system default)
+[ubuntu-tahoe] RESET: org.gnome.shell.extensions.dash-to-dock show-trash (back to the system default)
+[ubuntu-tahoe] RESET: org.gnome.shell.extensions.dash-to-dock show-mounts (back to the system default)
+[ubuntu-tahoe] RESET: org.gnome.shell.extensions.dash-to-dock running-indicator-style (back to the system default)
+[ubuntu-tahoe] RESET: org.gnome.shell.extensions.dash-to-dock custom-theme-shrink (back to the system default)
+[ubuntu-tahoe] Removing module: wallpaper
+[ubuntu-tahoe] RESET: org.gnome.desktop.background picture-uri (back to the system default)
+[ubuntu-tahoe] RESET: org.gnome.desktop.background picture-uri-dark (back to the system default)
+[ubuntu-tahoe] RESET: org.gnome.desktop.background picture-options (back to the system default)
+[ubuntu-tahoe] REMOVED: /home/ubuntu/.local/share/backgrounds/ubuntu-tahoe
+[ubuntu-tahoe] Removing module: cursor
+[ubuntu-tahoe] RESET: org.gnome.desktop.interface cursor-theme (back to the system default)
+[ubuntu-tahoe] RESET: org.gnome.desktop.interface cursor-size (back to the system default)
+[ubuntu-tahoe] REMOVED: /home/ubuntu/.local/share/icons/MacTahoe-cursors
+[ubuntu-tahoe] Removing module: icons
+[ubuntu-tahoe] RESET: org.gnome.desktop.interface icon-theme (back to the system default)
+[ubuntu-tahoe] REMOVED: /home/ubuntu/.local/share/icons/MacTahoe-dark
+[ubuntu-tahoe] REMOVED: /home/ubuntu/.local/share/icons/MacTahoe-light
+[ubuntu-tahoe] REMOVED: /home/ubuntu/.local/share/icons/MacTahoe
+[ubuntu-tahoe] Removing module: appearance
+[ubuntu-tahoe] RESET: org.gnome.desktop.interface gtk-theme (back to the system default)
+[ubuntu-tahoe] RESET: org.gnome.shell.extensions.user-theme name (back to the system default)
+[ubuntu-tahoe] RESET: org.gnome.desktop.wm.preferences button-layout (back to the system default)
+[ubuntu-tahoe] REMOVED: /home/ubuntu/.config/systemd/user/ubuntu-tahoe-theme-sync.service
+[ubuntu-tahoe] REMOVED: /home/ubuntu/.local/bin/ubuntu-tahoe-theme-sync
+[ubuntu-tahoe] DISABLED extension: user-theme@gnome-shell-extensions.gcampax.github.com
+[ubuntu-tahoe] REMOVED: /home/ubuntu/.config/gtk-4.0/windows-assets
+[ubuntu-tahoe] REMOVED: /home/ubuntu/.config/gtk-4.0/assets
+[ubuntu-tahoe] REMOVED: /home/ubuntu/.config/gtk-4.0/gtk-dark.css
+[ubuntu-tahoe] REMOVED: /home/ubuntu/.config/gtk-4.0/gtk.css
+[ubuntu-tahoe] REMOVED: /home/ubuntu/.themes/MacTahoe-Dark
+[ubuntu-tahoe] REMOVED: /home/ubuntu/.themes/MacTahoe-Light
+[ubuntu-tahoe] Uninstall finished. Log out and back in if the shell theme or extensions still look applied.
