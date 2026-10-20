@@ -41,6 +41,18 @@ appearance_module(){
     remove)
       systemctl --user disable --now ubuntu-tahoe-theme-sync.service >/dev/null 2>&1 || true
       sync_unset GTK_LIGHT GTK_DARK THEMES_DIR
+      if command -v flatpak >/dev/null 2>&1; then
+        flatpak override --user --unset-env=GTK_THEME --nofilesystem=xdg-config/gtk-4.0 --nofilesystem="$HOME/.themes" 2>/dev/null || true
+      fi
+      # Snap copies made by theme-sync carry a .ubuntu-tahoe marker.
+      local marker
+      for marker in "$HOME"/snap/*/current/.themes/*/.ubuntu-tahoe "$HOME"/snap/*/current/.config/gtk-4.0/.ubuntu-tahoe; do
+        [[ -e "$marker" ]] || continue
+        case "$marker" in
+          */gtk-4.0/.ubuntu-tahoe) (cd "$(dirname "$marker")" && rm -rf gtk.css gtk-dark.css assets windows-assets .ubuntu-tahoe) ;;
+          *) rm -rf "$(dirname "$marker")" ;;
+        esac
+      done
       restore_module_settings appearance
       remove_module_files appearance
       systemctl --user daemon-reload >/dev/null 2>&1 || true
